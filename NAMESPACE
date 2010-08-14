@@ -1,0 +1,16 @@
+export(validate,
+	show,
+	showAll,
+	getPrototypes,
+	getRelevances,
+	getPrototypeProgress,
+	getRelevanceProgress,
+	getCostcurve,
+	getTrainError,
+	getTestError,
+	getTrainErrorProgress,
+	getTestErrorProgress)
+
+exportClasses(nfoldoutput,
+	      trainoutput,
+	      traintestoutput)
