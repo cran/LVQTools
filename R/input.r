@@ -7,12 +7,14 @@ input <- function(datapath, normalizescheme = 'none', normalclasswise = 'none', 
 
   if (all(is.na(input)) & !is.na(datapath)) {
 
-    frame <- read.table(datapath)
-    data <- data.matrix(frame)
-    dimensions <- length(data[1,]) - 1
-    data[, dimensions + 1] <- transformlabels(data[, dimensions + 1])
-    dimensions <- length(data[1,]) - 1
-    originallabels <- as.character(frame[,dimensions+1])
+    inp <- scan(datapath, list(""))
+    inp <- parseData(inp)
+    dimensions <- length(attr(inp, 'data')[1,])
+    nrdatapoints <- length(attr(inp, 'data')[,1])
+    data <- matrix(0, nrdatapoints, dimensions+1)
+    data[1:nrdatapoints,1:dimensions] <- attr(inp, 'data')
+    data[, dimensions + 1] <- transformlabels(attr(inp, 'labels'))
+    originallabels <- attr(inp, 'labels')
     lvls <- levels(factor(originallabels))
     ordorlabs <- lvls[order(lvls)]
     classlabels <- data[,dimensions+1]
@@ -131,3 +133,44 @@ transformlabels <- function (classlabels) {
   }
   newclasslabels
 }
+
+parseData <- function (input) {
+  datalist <- list()
+  labels <- vector()
+  nrlines <- length(input[[1]])
+  for (i in 1:nrlines) {
+    line <- strsplit(input[[1]][i], ',')
+    datalist[i] <- line
+  }
+  dimensions <- length(datalist[[1]]) - 1
+  data <- matrix(0, nrlines, dimensions)
+  for (i in 1:nrlines) {
+    data[i,] <- as.numeric(datalist[[i]][1:dimensions])
+    labels[i] <- datalist[[i]][dimensions+1]
+  }
+  inp <- new('input')
+  attr(inp, 'data') <- data
+  attr(inp, 'labels') <- labels
+  inp
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

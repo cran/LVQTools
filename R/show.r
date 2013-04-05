@@ -70,8 +70,8 @@ showResults <- function (protomatrix, protolabels, epoch, sorteddata, data, labe
       print(relevances)
     }
     if (costfunction) {
-      print("costcurve")
-      print(costcurve)
+      print("cost")
+      print(costcurve[length(epoch)])
     }
   }
 }
