@@ -1,12 +1,12 @@
-\name{show}
-\alias{show}
+\name{showStuff}
+\alias{showStuff}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ show }
+\title{ showStuff }
 \description{
   This function shows all the selected output. The selection is made by providing the appropriate parameters with TRUE.
 }
 \usage{
-show(LVQoutput, prototypes = FALSE, relevances = FALSE, costcurve = FALSE, prototypeprogress = FALSE, relevanceprogress = FALSE, trainerror = FALSE, testerror = FALSE, trainerrorprogress = FALSE, testerrorprogress = FALSE, protofold = -1, relfold = -1, costfold = -1, protoprogfold = -1, relprogfold = -1, trainerrorprogfold = -1, testerrorprogfold = -1, relevancenumber = -1, relevanceprognumber = -1)
+showStuff(LVQoutput, prototypes = FALSE, relevances = FALSE, costcurve = FALSE, prototypeprogress = FALSE, relevanceprogress = FALSE, trainerror = FALSE, testerror = FALSE, trainerrorprogress = FALSE, testerrorprogress = FALSE, protofold = -1, relfold = -1, costfold = -1, protoprogfold = -1, relprogfold = -1, trainerrorprogfold = -1, testerrorprogfold = -1, relevancenumber = -1, relevanceprognumber = -1)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -40,7 +40,7 @@ show(LVQoutput, prototypes = FALSE, relevances = FALSE, costcurve = FALSE, proto
 
 \seealso{
 	  \code{\link{validate}}
-	  \code{\link{show}},
+	  \code{\link{showStuff}},
 	  \code{\link{showAll}},
 	  \code{\link{getCostcurve}},
 	  \code{\link{getPrototypeProgress}},

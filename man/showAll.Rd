@@ -22,7 +22,7 @@ showAll(LVQoutput)
 
 \seealso{
 	  \code{\link{validate}}
-	  \code{\link{show}},
+	  \code{\link{showStuff}},
 	  \code{\link{showAll}},
 	  \code{\link{getCostcurve}},
 	  \code{\link{getPrototypeProgress}},

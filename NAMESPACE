@@ -1,5 +1,5 @@
 export(validate,
-	show,
+	showStuff,
 	showAll,
 	getPrototypes,
 	getRelevances,

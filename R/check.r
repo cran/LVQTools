@@ -236,7 +236,6 @@ checkOutputVars <- function (prototypeoutput, relevanceoutput, costcurve, progre
 
 checkShowVars <- function(LVQoutput, prototypes, relevances, costcurve, prototypeprogress, relevanceprogress, trainerror, testerror, trainerrorprogress, testerrorprogress, relevancenumber, relevanceprognumber) {
   errors <- vector()
-print('checkShowVars')
   if (!any(class(LVQoutput) == c('trainoutput', 'traintestoutput', 'nfoldoutput'))) {
     errors[length(errors) + 1] <- 40
   }

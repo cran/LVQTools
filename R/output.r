@@ -299,12 +299,12 @@ showAll <- function (LVQoutput) {
     trainerrorprogress <- TRUE
   }
 
-  show(LVQoutput = LVQoutput, prototypes = prototypes, relevances = relevances, costcurve = costcurve, prototypeprogress = prototypeprogress,
+  showStuff(LVQoutput = LVQoutput, prototypes = prototypes, relevances = relevances, costcurve = costcurve, prototypeprogress = prototypeprogress,
 	relevanceprogress = relevanceprogress, trainerror = trainerror, testerror = testerror, trainerrorprogress = trainerrorprogress,
 	testerrorprogress = testerrorprogress)
 }
 
-show <- function (LVQoutput, prototypes = FALSE, relevances = FALSE, costcurve = FALSE, prototypeprogress = FALSE, relevanceprogress = FALSE,
+showStuff <- function (LVQoutput, prototypes = FALSE, relevances = FALSE, costcurve = FALSE, prototypeprogress = FALSE, relevanceprogress = FALSE,
 		  trainerror = FALSE, testerror= FALSE, trainerrorprogress = FALSE, testerrorprogress = FALSE,
 		  protofold = -1, relfold = -1, costfold = -1, protoprogfold = -1, relprogfold = -1, trainerrorprogfold = -1,
 		  testerrorprogfold = -1, relevancenumber = -1, relevanceprognumber = -1) {

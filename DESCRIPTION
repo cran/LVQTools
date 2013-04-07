@@ -1,15 +1,15 @@
 Package: LVQTools
 Type: Package
 Title: Learning Vector Quantization Tools
-Version: 1.1
-Date: 2013-04-05
+Version: 1.2
+Date: 2013-04-07
 Author: Sander Kelders <sakelders@gmail.com>
 Maintainer: Sander Kelders <sakelders@gmail.com>
 Description: This package provides several LVQ algorithms along with
         different usage methods and output visualization.
 Depends: methods
 License: GPL-2
-Packaged: 2013-04-05 09:00:57 UTC; sander
+Packaged: 2013-04-07 12:04:57 UTC; sander
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-04-05 12:13:40
+Date/Publication: 2013-04-08 16:37:16
